@@ -113,4 +113,5 @@ while (true) {
 
 }
 
-module.exports = jouerPianoExt;
+// module.exports = jouerPianoExt;
+Scratch.extensions.register(new jouerPianoExt())
