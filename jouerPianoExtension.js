@@ -17,7 +17,7 @@ class jouerPianoExt{
   //   // communication related
   //   this.comm = runtime.ioDevices.comm;
   //   this.session = null;
-  //   this.runtime.registerPeripheralExtension('jouerPianoExt', this);
+  //   this.runtime.registerPeripheralExtension("jouerPianoExt", this);
   //   // session callbacks
   //   this.reporter = null;
   //   this.onmessage = this.onmessage.bind(this);
@@ -25,7 +25,7 @@ class jouerPianoExt{
   //   this.write = this.write.bind(this);
   //   // string op
   //   this.decoder = new TextDecoder();
-  //   this.lineBuffer = '';
+  //   this.lineBuffer = "";
   // }
 
   // onclose (){
@@ -49,8 +49,8 @@ class jouerPianoExt{
   // onmessage (data){
   //   const dataStr = this.decoder.decode(data);
   //   this.lineBuffer += dataStr;
-  //   if (this.lineBuffer.indexOf('\n') !== -1){
-  //     const lines = this.lineBuffer.split('\n');
+  //   if (this.lineBuffer.indexOf("\n") !== -1){
+  //     const lines = this.lineBuffer.split("\n");
   //     this.lineBuffer = lines.pop();
   //     for (const l of lines){
   //       if (this.reporter){
@@ -69,17 +69,17 @@ class jouerPianoExt{
 
   getInfo (){
     return {
-      id: 'jouerPianoExt',
-      name: 'Piano',
-      color1: '#b8e986',
-      color2: '#b8e986',
+      id: "jouerPianoExt",
+      name: "Piano",
+      color1: "#b8e986",
+      color2: "#b8e986",
       menuIconURI: menuIconURI,
       blockIconURI: blockIconURI,
       blocks: [
         {
-          opcode: 'jouerPiano',
+          opcode: "jouerPiano",
           blockType: BlockType.COMMAND,
-          text: 'jouer piano'
+          text: "jouer piano"
         }
       ]
     }
